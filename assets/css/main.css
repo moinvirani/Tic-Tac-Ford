@@ -1,0 +1,38 @@
+body {
+  font-size: 1.5em;
+  font-family: Helvetica, Arial;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+table {
+  margin: 0 auto;
+  cursor: default;
+  border-spacing: 0;
+  width: 30em;
+  height: 30em;
+}
+
+td {
+  padding: 0;
+  width: 33.3%;
+  height: 33.3%;
+  font-size: 8em;
+}
+
+table, td { /* by giving both a 1px border, everything gets a 2px border on all sides */
+      border: 1px solid black;
+    }
+
+body.game-on td:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+body.game-on td.taken:hover {
+  cursor: default;
+  background-color: inherit;
+}
+td.win {
+  background-color: blue;
+}
